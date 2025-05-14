@@ -3,31 +3,12 @@
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #2d3748;
   overflow-x: hidden;
+  padding-top: 4rem;
 }
 
-:global(:root) {
-  --primary-color: #007B5E;
-  --secondary-color: #10b981;
-  --highlight-color: #007B5E;
-  --dark-color: #1e293b;
-  --light-color: #f8fafc;
-  --text-color: #2d3748;
-  --text-light: #64748b;
-}
 
 /* Hero Section */
-.hero {
-  position: relative;
-  height: 90vh;
-  min-height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('/images/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 0 2rem;
-}
+
 
 .hero {
   position: relative;
@@ -58,7 +39,7 @@
 }
 
 .highlight {
-  color: var(--highlight-color);
+  color: #007B5E;
 }
 
 .heroSubtitle {
@@ -98,7 +79,7 @@
 }
 
 .tab.active {
-  background: var(--primary-color);
+  background: #007B5E;
 }
 
 /* Search Container */
@@ -122,7 +103,7 @@
 .searchIcon {
   position: absolute;
   left: 1rem;
-  color: var(--text-light);
+  color: #64748b;
 }
 
 .searchInput {
@@ -131,17 +112,17 @@
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   font-size: 1rem;
-  color: var(--text-color);
+  color: #2d3748;
 }
 
 .searchInput:focus {
   outline: none;
-  border-color: var(--primary-color);
+  border-color: #007B5E;
   box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
 }
 
 .searchButton {
-  background: var(--primary-color);
+  background: #007B5E;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -172,12 +153,12 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--dark-color);
+  color: #1e293b;
 }
 
 .sectionHeader p {
   font-size: 1.1rem;
-  color: var(--text-light);
+  color: #64748b;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -212,7 +193,7 @@
 
 .featureIcon {
   font-size: 2rem;
-  color: var(--primary-color);
+  color: #007B5E;
   margin-bottom: 1.5rem;
 }
 
@@ -220,18 +201,18 @@
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: var(--dark-color);
+  color: #1e293b;
 }
 
 .featureCard p {
-  color: var(--text-light);
+  color: #64748b;
   line-height: 1.6;
 }
 
 /* Destinations Section */
 .destinations {
   padding: 6rem 2rem;
-  background: var(--light-color);
+  background: #f8fafc;
 }
 
 .destinationsGrid {
@@ -276,7 +257,7 @@
   bottom: 1rem;
   right: 1rem;
   background: rgba(255, 255, 255, 0.9);
-  color: var(--dark-color);
+  color: #1e293b;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-weight: 600;
@@ -294,17 +275,17 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--dark-color);
+  color: #1e293b;
 }
 
 .destinationInfo p {
-  color: var(--text-light);
+  color: #64748b;
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
 
 .exploreButton {
-  background: var(--primary-color);
+  background: #007B5E;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -376,7 +357,7 @@
   position: absolute;
   bottom: 1rem;
   left: 1rem;
-  background: var(--secondary-color);
+  background: #10b981;
   color: white;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
@@ -394,11 +375,11 @@
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
-  color: var(--dark-color);
+  color: #1e293b;
 }
 
 .hotelInfo p {
-  color: var(--text-light);
+  color: #64748b;
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
@@ -407,7 +388,7 @@
 }
 
 .bookButton {
-  background: var(--secondary-color);
+  background: #10b981;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -429,7 +410,7 @@
 /* Services Section */
 .services {
   padding: 6rem 2rem;
-  background: var(--light-color);
+  background: #f8fafc;
 }
 
 .cards {
@@ -463,11 +444,11 @@
   font-size: 1.3rem;
   font-weight: 700;
   margin: 1rem 1.5rem 0.5rem;
-  color: var(--dark-color);
+  color: #1e293b;
 }
 
 .card p {
-  color: var(--text-light);
+  color: #64748b;
   margin: 0 1.5rem 1rem;
   line-height: 1.5;
 }
@@ -476,7 +457,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--primary-color);
+  color: #007B5E;
   font-weight: 600;
   padding: 1rem 1.5rem;
   border-top: 1px solid #e2e8f0;
@@ -501,18 +482,18 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: var(--dark-color);
+  color: #1e293b;
 }
 
 .aboutText p {
-  color: var(--text-light);
+  color: #64748b;
   line-height: 1.6;
   margin-bottom: 2rem;
   font-size: 1.1rem;
 }
 
 .learnMore {
-  background: var(--primary-color);
+  background: #007B5E;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -536,7 +517,7 @@
 /* CTA Section */
 .cta {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--highlight-color));
+  background: linear-gradient(135deg, #007B5E, #007B5E);
   color: white;
   text-align: center;
 }
