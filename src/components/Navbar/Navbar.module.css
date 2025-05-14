@@ -1,5 +1,5 @@
 /* Navbar.module.css */
-:root {
+:global(:root) {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
   --text-color: #2c3e50;
