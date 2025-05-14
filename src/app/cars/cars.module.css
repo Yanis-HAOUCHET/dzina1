@@ -1,0 +1,514 @@
+/* Base Styles */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2d3748;
+  overflow-x: hidden;
+}
+
+:root {
+  --highlight-color: #7c3aed;
+  --secondary-color: #4f46e5;
+}
+
+.highlight {
+  color: var(--highlight-color);
+  font-weight: 700;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #000428, #004e92);
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  background: linear-gradient(to right, #fff, #cbd5e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroSubtitle {
+  font-size: 1.8rem;
+  opacity: 0.9;
+  color: #e2e8f0;
+  margin-bottom: 3rem;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.heroCta {
+  background: var(--highlight-color);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
+}
+
+.secondaryCta {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid white;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.secondaryCta:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2rem;
+}
+
+/* Main Tabs */
+.mainTabs {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.mainTab {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #64748b;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mainTab:hover {
+  color: var(--highlight-color);
+}
+
+.activeMainTab {
+  color: var(--highlight-color);
+  border-bottom: 3px solid var(--highlight-color);
+}
+
+/* Search Container */
+.searchContainer {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  margin: 0 auto 3rem auto;
+  max-width: 800px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Ride Type Tabs */
+.rideTabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: none;
+}
+
+.rideTabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabButton {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.tabButton:hover {
+  transform: translateY(-2px);
+  border-color: #cbd5e0;
+}
+
+.activeTab {
+  border: 2px solid var(--highlight-color);
+  color: var(--highlight-color);
+  background: rgba(124, 58, 237, 0.05);
+  box-shadow: 0 4px 6px rgba(124, 58, 237, 0.1);
+}
+
+.tabIcon {
+  font-size: 1.8rem;
+}
+
+/* Search Form */
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 20px;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 1.2rem 1.2rem 1.2rem 3.5rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.searchInput:focus {
+  border-color: var(--highlight-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+}
+
+.searchButton {
+  background: var(--highlight-color);
+  color: white;
+  border: none;
+  padding: 1.2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.searchButton::after {
+  content: '→';
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.searchButton:hover::after {
+  transform: translateX(3px);
+}
+
+/* Rental Specific Styles */
+.rentalInputGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.inputColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputColumn label {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+/* Ride Options Section */
+.ridesSection {
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.rideGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rideOptionCard {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+
+.rideOptionHeader {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.rideOptionIcon {
+  font-size: 2rem;
+}
+
+.rideOptionName {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.rideOptionDetails {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rideOptionDetails p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rideOptionDetails p strong {
+  color: #4a5568;
+}
+
+.selectButton {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.selectButton:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Car Rental Section */
+.rentalSection {
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.carGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carCard {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.carCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.selectedCar {
+  border-color: var(--car-color);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.carIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.carName {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #2d3748;
+}
+
+.carDetails {
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.detailLabel {
+  display: inline-block;
+  width: 80px;
+  color: #718096;
+}
+
+.rentButton {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--car-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rentButton:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.selectedCarBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--car-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.4rem;
+  }
+  
+  .heroButtons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .searchContainer {
+    padding: 1.5rem;
+    margin: 0 1rem 2rem 1rem;
+  }
+  
+  .rentalInputGroup {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  
+  .mainTabs {
+    margin: 1rem 0;
+  }
+  
+  .mainTab {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .tabButton {
+    min-width: 100px;
+    padding: 0.8rem 0.3rem;
+  }
+  
+  .tabIcon {
+    font-size: 1.5rem;
+  }
+  
+  .inputIcon {
+    left: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .searchInput {
+    padding-left: 2.8rem;
+  }
+}
