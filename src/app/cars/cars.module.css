@@ -9,11 +9,6 @@
   overflow-x: hidden;
 }
 
-:root {
-  --highlight-color: #7c3aed;
-  --secondary-color: #4f46e5;
-}
-
 .highlight {
   color: var(--highlight-color);
   font-weight: 700;
