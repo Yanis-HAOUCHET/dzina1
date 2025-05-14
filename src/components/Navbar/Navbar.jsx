@@ -42,9 +42,9 @@ export default function Navbar() {
       name: 'Transport', 
       href: '/cars',
       subItems: [
-        { name: 'Car Rentals', href: '/transport' },
-        { name: 'Airport Transfers', href: '/transport' },
-        { name: 'Tours', href: '/transport' }
+        { name: 'Car Rentals', href: '/cars' },
+        { name: 'Airport Transfers', href: '/cars' },
+        { name: 'Tours', href: '/cars' }
       ]
     },
     { name: 'Restaurents', href: '/restaurants' },
