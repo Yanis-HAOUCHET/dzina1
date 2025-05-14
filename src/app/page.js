@@ -278,7 +278,7 @@ export default function LandingPage() {
       {/* Top Destinations Section */}
       <section className={styles.destinations}>
         <div className={styles.sectionHeader}>
-          <h2>Explore Algeria's Beauty</h2>
+          <h2>Explore Algeria&apos;s Beauty</h2>
           <p>Top destinations to visit</p>
         </div>
         
@@ -404,7 +404,7 @@ export default function LandingPage() {
             >
               <img src="/images/tours.jpg" alt="Tours" />
               <h3>Tours</h3>
-              <p>Explore Algeria's beauty through guided tours and adventures.</p>
+              <p>Explore Algeria&apos;s beauty through guided tours and adventures.</p>
               <span className={styles.cardLink}>Discover Tours <FiArrowRight /></span>
             </motion.div>
           </Link>
@@ -417,7 +417,7 @@ export default function LandingPage() {
           <div className={styles.aboutText}>
             <h2>About Dzina</h2>
             <p>
-              Dzina is your all-in-one Algerian travel platform. Whether you're looking for hotels, transportation, food, or exciting tours, Dzina helps you plan and book it all in one place. Our mission is to make travel easy, accessible, and enjoyable for everyone in Algeria.
+              Dzina is your all-in-one Algerian travel platform. Whether you&apos;re looking for hotels, transportation, food, or exciting tours, Dzina helps you plan and book it all in one place. Our mission is to make travel easy, accessible, and enjoyable for everyone in Algeria.
             </p>
             <button className={styles.learnMore}>Learn More</button>
           </div>
