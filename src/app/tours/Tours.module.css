@@ -8,13 +8,6 @@
   padding-top: 4rem;
 }
 
-:root {
-  --primary-color: #049c6a;
-  --secondary-color: #10b981;
-  --highlight-color: #7c3aed;
-  --dark-color: #1e293b;
-  --light-color: #f8fafc;
-}
 
 /* Hero Section */
 .hero {
@@ -57,7 +50,7 @@
 }
 
 .highlight {
-  color: var(--highlight-color);
+  color: #7c3aed;
 }
 
 .heroSubtitle {
@@ -68,7 +61,7 @@
 }
 
 .ctaButton {
-  background: var(--primary-color);
+  background: #049c6a;
   color: white;
   border: none;
   padding: 1rem 2.5rem;
@@ -95,7 +88,7 @@
 }
 
 .darkSection {
-  background: var(--light-color);
+  background: #f8fafc;
 }
 
 .sectionHeader {
@@ -107,7 +100,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--dark-color);
+  color: #1e293b;
 }
 
 .sectionHeader p {
@@ -151,7 +144,7 @@
   top: 1rem;
   right: 1rem;
   background: rgba(255, 255, 255, 0.9);
-  color: var(--dark-color);
+  color: #1e293b;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-weight: 600;
@@ -169,11 +162,11 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--dark-color);
+  color: #1e293b;
 }
 
 .specialty {
-  color: var(--primary-color);
+  color: #049c6a;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -192,8 +185,8 @@
 
 .profileButton {
   background: transparent;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: #049c6a;
+  border: 1px solid #049c6a;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
   font-weight: 600;
@@ -262,7 +255,7 @@
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--dark-color);
+  color: #1e293b;
 }
 
 .activityInfo p {
@@ -278,12 +271,12 @@
 }
 
 .duration {
-  color: var(--secondary-color);
+  color: #10b981;
   font-weight: 600;
 }
 
 .bookButton {
-  background: var(--primary-color);
+  background: #049c6a;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -304,7 +297,7 @@
 /* CTA Section */
 .ctaSection {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--highlight-color));
+  background: linear-gradient(135deg, #049c6a, #7c3aed);
   color: white;
   text-align: center;
 }
@@ -335,7 +328,7 @@
 
 .primaryButton {
   background: white;
-  color: var(--primary-color);
+  color: #049c6a;
   border: none;
   padding: 1rem 2rem;
   border-radius: 8px;
