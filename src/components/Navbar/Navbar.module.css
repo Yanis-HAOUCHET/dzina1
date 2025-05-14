@@ -1,13 +1,3 @@
-/* Navbar.module.css */
-:global(:root) {
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --text-color: #2c3e50;
-  --light-gray: #f8f9fa;
-  --medium-gray: #e9ecef;
-  --dark-gray: #6c757d;
-  --transition-speed: 0.3s;
-}
 
 .navbar {
   position: fixed;
@@ -48,12 +38,12 @@
 
 .logoMain {
   font-family: 'Poppins', sans-serif;
-  color: var(--primary-color);
+  color: #2c3e50;
   font-weight: 700;
 }
 
 .logoAccent {
-  color: var(--secondary-color);
+  color: #3498db;
   margin-left: 0.3rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -74,13 +64,13 @@
 .searchIcon {
   position: absolute;
   left: 12px;
-  color: var(--dark-gray);
+  color: #6c757d;
 }
 
 .searchInput {
   padding: 0.6rem 1rem 0.6rem 2.5rem;
   border-radius: 50px;
-  border: 1px solid var(--medium-gray);
+  border: 1px solid #e9ecef;
   font-size: 0.9rem;
   width: 200px;
   transition: all var(--transition-speed) ease;
@@ -88,7 +78,7 @@
 
 .searchInput:focus {
   outline: none;
-  border-color: var(--secondary-color);
+  border-color: #3498db;
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
   width: 250px;
 }
@@ -107,7 +97,7 @@
 
 .navLink {
   position: relative;
-  color: var(--text-color);
+  color: #2c3e50;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -118,7 +108,7 @@
 }
 
 .navLink:hover {
-  color: var(--secondary-color);
+  color: #3498db;
 }
 
 .dropdownIcon {
@@ -144,7 +134,7 @@
   transform: translateY(10px);
   transition: all var(--transition-speed) ease;
   z-index: 1000;
-  border: 1px solid var(--medium-gray);
+  border: 1px solid #e9ecef;
 }
 
 .show {
@@ -156,14 +146,14 @@
 .dropdownItem {
   display: block;
   padding: 0.7rem 1.5rem;
-  color: var(--text-color);
+  color: #2c3e50;
   text-decoration: none;
   transition: all var(--transition-speed) ease;
 }
 
 .dropdownItem:hover {
-  color: var(--secondary-color);
-  background-color: var(--light-gray);
+  color: #3498db;
+  background-color: #f8f9fa;
 }
 
 .authButtons {
@@ -173,7 +163,7 @@
 
 .loginButton {
   padding: 0.6rem 1.2rem;
-  color: var(--text-color);
+  color: #2c3e50;
   text-decoration: none;
   font-weight: 500;
   border-radius: 50px;
@@ -181,12 +171,12 @@
 }
 
 .loginButton:hover {
-  color: var(--secondary-color);
+  color: #3498db;
 }
 
 .registerButton {
   padding: 0.6rem 1.2rem;
-  background-color: var(--secondary-color);
+  background-color: #3498db;
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -205,7 +195,7 @@
   display: none;
   background: none;
   border: none;
-  color: var(--text-color);
+  color: #2c3e50;
   cursor: pointer;
   z-index: 1001;
 }
@@ -243,14 +233,14 @@
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--dark-gray);
+  color: #6c757d;
 }
 
 .mobileSearchInput {
   width: 100%;
   padding: 0.8rem 1rem 0.8rem 2.5rem;
   border-radius: 50px;
-  border: 1px solid var(--medium-gray);
+  border: 1px solid #e9ecef;
   font-size: 1rem;
 }
 
@@ -262,7 +252,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--text-color);
+  color: #2c3e50;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -291,14 +281,14 @@
 .mobileDropdownItem {
   display: block;
   padding: 0.7rem 0;
-  color: var(--text-color);
+  color: #2c3e50;
   text-decoration: none;
   font-size: 1rem;
   transition: color var(--transition-speed) ease;
 }
 
 .mobileDropdownItem:hover {
-  color: var(--secondary-color);
+  color: #3498db;
 }
 
 .mobileAuthButtons {
@@ -310,17 +300,17 @@
 
 .mobileLoginButton {
   padding: 0.8rem;
-  color: var(--text-color);
+  color: #2c3e50;
   text-decoration: none;
   font-weight: 500;
   text-align: center;
   border-radius: 50px;
-  border: 1px solid var(--medium-gray);
+  border: 1px solid #e9ecef;
 }
 
 .mobileRegisterButton {
   padding: 0.8rem;
-  background-color: var(--secondary-color);
+  background-color: #3498db;
   color: white;
   text-decoration: none;
   font-weight: 500;
